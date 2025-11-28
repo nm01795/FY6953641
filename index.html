@@ -68,6 +68,7 @@
 
 <p class="ex1">
 <h3 id="Abstract">Abstract</h3>
+<div id="Abstract_InText">
 <pre>
 This paper presents compares liquid methane (LOX/CH4) and kerosene (LOX/RP-1) as rocket fuels for
 reusable booster engines. The study evaluates the performance, e.g specific impulse, density,
@@ -75,6 +76,7 @@ combustion temp and environmental factors. Based on published studies, and compa
 of using these fuels in reusable rockets by using real life examples of rockets that use these fuel 
 sources where methane is a more modern alternative. 
 </pre>
+</div>
     </p>
 
 <p class="ex1">
@@ -276,8 +278,9 @@ towards this, therefore methane is likely to become dominant in the future of ro
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
+    const AbstractCount = displayWordCount("Abstract_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount + AbstractCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
