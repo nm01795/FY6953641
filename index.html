@@ -78,8 +78,9 @@ sources where methane is a more modern alternative.
     </p>
 
 <p class="ex1">
+<h3 id="Introduction">Introduction</h3>
+<div id="Introduction_InText">
 <pre>
-  <h3 id="Introduction">Introduction</h3>
 The fuel that a rocket engine uses determines the efficiency, the cost and reusability of rockets. Firstly, 
 Kerosene particularly RP-1, has been the main fuel source in the past which has powered the most popular 
 launch vehicles such as the Saturn V and Soyuz rockets.Whereas Methane is now becoming a highly used fuel 
@@ -88,11 +89,13 @@ Space X’s starship and Blue Origin’s New Glenn, Where reusability is very im
 rockets due to the possibilities of flight to other planets such as mars and the possibility for synthesis
 of these fuels on extraterrestrial planets.
 </pre>
+</div>
     </p>
 
 <p class="ex1">
+<h3 id="Analysis and discussion">Analysis and discussion</h3>
+<div id="Analysis_InText">
 <pre>
-  <h3 id="Analysis and discussion">Analysis and discussion</h3>
   Table 1:
   <table>
     <tr>
@@ -180,8 +183,10 @@ Therefore methane has a clear advantage over RP-1.
 </pre>
     </p>
 <p class="ex1">
+<h3 id="Conclusion">Conclusion</h3>  
+<div id="Conclusion_InText">
 <pre>
-  <h3 id="Conclusion">Conclusion</h3>
+ 
 In Conclusion, The choice between RP-1 fuel and methane fuel plays a vital role in determining all the factors
 of modern launch vehicles, where RP-1(kerosene) has the longest history of powering rockets its limitations 
 make reusability not ideal with RP-1, where methane on the other hand offers more benefits when it comes to
@@ -266,10 +271,11 @@ towards this, therefore methane is likely to become dominant in the future of ro
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("Analysis");
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
