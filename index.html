@@ -28,15 +28,13 @@
           tr:nth-child(even) {
             background-colour: #25384a;
           }
-        
-        </style>
 
       <style>
         p.ex1 {
           margin-left: 250px;
         }
       </style>
-  </head>
+  </head>https://github.com/nm01795/FY6953641/edit/main/index.html#L29C28
 
   <body>
         <!table of contents>
@@ -247,8 +245,7 @@ towards this, therefore methane is likely to become dominant in the future of ro
         await getLastUpdatedTime();
         alert("Last modified time has been successfully verified from GitHub API.");
     }
-    // Initial load to display the time on page load
-    window.onload = getLastUpdatedTime;
+   
 </script>
 
 <!-- Placeholder for total word count -->
@@ -277,7 +274,10 @@ towards this, therefore methane is likely to become dominant in the future of ro
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
+  window.onload = () => {
+    getLastUpdatedTime();  
+    displayTotalWordCount();
+  };
 </script>
 
 
